@@ -1,5 +1,16 @@
 #!/usr/bin/env python3
 
+"""
++---------------------------------------+
+|          Marco Toledo, 2021           |
+|             BCC@ICMC-USP              |
+| marcoantonioribeirodetoledo@gmail.com |
+|             mardt@usp.br              |
++---------------------------------------+
+
+Licensed over GPL-v3, check ../LICENSE for more info
+"""
+
 import typing
 import os
 import tweepy
@@ -17,12 +28,35 @@ class QueryError(Exception):
         query: Original query with error
     """
     def __init__(self, err: str, query: str = "") -> Exception:
+        """
+        Throws QuerryError with specified error message and sets
+        intance's query
+
+        :param err: Error message for the exception
+        :type err: str
+
+        :param query: Query that threw the given error [optional]
+        :type query: str
+        """
         self.query = query
         super().__init__("Error while building query: {}".format(err))
 
 
 class RequestRunner():
-    def __init__(self, archiveTag="archive", lastMonthTag="30days"):
+    """
+    Holds methods for building and running queries.
+    """
+    def __init__(self,
+                 archiveTag: str = "archive",
+                 lastMonthTag: str = "30days"):
+        """
+        :param archiveTag: Tag for the archive search sandbox as stated on the developer console
+        :type archiveTag: str
+
+        :param lastMonthTag: Tag for the "last 30 days" search sandbox as stated on the developer console
+        :type lastMonthTag: str
+        """
+
         # Parameterized values
         self.ARCHIVE_TAG = archiveTag
         self.LAST_MONTH_TAG = lastMonthTag
@@ -55,6 +89,15 @@ class RequestRunner():
         self._definedQuery = ""
 
     def buildQuery(self, terms: [str]) -> typing.Union[str, None]:
+        """
+        Builds and saves query based on the given search terms.
+
+        :param terms: Defined search terms
+        :type terms: [str]
+
+        :returns: Copy of the saved query if successful, otherwise None object
+        :rtype: typing.Union[str, None]
+        """
         if len(terms) == 0:
             return None
         jointTerms = " OR ".join(terms)
@@ -70,7 +113,26 @@ class RequestRunner():
             _year: int,
             _month: int,
             _maxResults: int,
-    ) -> [tweepy.models.Status]:
+    ) -> tweepy.models.ResultSet:
+        """
+        Internal archive query runner utility.
+
+        :param _archiveQuery: Initialized and formated search query
+        :type _archiveQuery: str
+
+        :param _year: Year for the analysed time span
+        :type _year: int
+
+        :param _month: Month for the analysed time span
+        :type _month: int
+
+        :param _maxResults: Maximum number of returned tweets
+        [resolves to min(size of found_tweets, _maxResults)]
+        :type _maxResults: int
+
+        :returns: ResultSet of found tweets
+        :rtype: tweepy.models.ResultSet
+        """
         if _maxResults < 10 or _maxResults > self.MAX_PER_MONTH:
             raise QueryError(
                 "maxResults out of range [10, {}]".format(self.MAX_PER_MONTH)
@@ -92,6 +154,23 @@ class RequestRunner():
             month: int,
             maxResults=-1,
     ) -> [dict]:
+        """
+        Archive query facility.
+
+        :param year: Year for the analysed time span
+        :type year: int
+
+        :param month: Month for the analysed time span
+        :type month: int
+
+        :param maxResults: Maximum number of returned tweets
+        (defaults to maximum monthly quota on < 0)
+        :type maxResults: int
+
+        :returns: List of dicts containing the truncated text from the
+        tweet and its id_str
+        :rtype: [dict]
+        """
         if self._definedQuery == "":
             raise QueryError("Query not defined. Run `buildQuery` to set it")
 

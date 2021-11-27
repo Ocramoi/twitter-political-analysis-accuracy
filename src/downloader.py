@@ -1,9 +1,21 @@
 #!/usr/bin/env python3
 
+"""
++---------------------------------------+
+|          Marco Toledo, 2021           |
+|             BCC@ICMC-USP              |
+| marcoantonioribeirodetoledo@gmail.com |
+|             mardt@usp.br              |
++---------------------------------------+
+
+Licensed over GPL-v3, check ../LICENSE for more info
+"""
+
 import argparse
 import sys
 import pandas as pd
 from datetime import datetime
+
 from requestrunner import RequestRunner
 
 parser = argparse.ArgumentParser(
@@ -12,7 +24,17 @@ parser = argparse.ArgumentParser(
 )
 
 
-def monthType(v: str):
+def _monthType(v: str) -> int:
+    """
+    Checks `month` command line argument validity on startup and converts
+    value.
+
+    :param v: Value read from the command line
+    :type v: str
+    :raises argparse.ArgumentTypeError: Encountered error while parsing value
+    :returns: The converted month after checking
+    :rtype: int
+    """
     v = int(v)
     if v < 1 or v > 12:
         raise argparse.ArgumentTypeError(
@@ -21,7 +43,16 @@ def monthType(v: str):
     return v
 
 
-def yearType(v: str):
+def _yearType(v: str) -> int:
+    """
+    Checks `year` command line argument validity on startup and converts value.
+
+    :param v: Value read from the command line
+    :type v: str
+    :raises argparse.ArgumentTypeError: Encountered error while parsing value
+    :returns: The converted year after checking
+    :rtype: int
+    """
     v = int(v)
     curYear = datetime.now().year
     if v < 2006 or v > curYear:
@@ -31,31 +62,44 @@ def yearType(v: str):
     return v
 
 
-def amountType(v: str):
+def _amountType(v: str):
+    """
+    Checks `number` command line argument validity on startup and
+    converts value.
+
+    :param v: Value read from the command line
+    :type v: str
+    :raises argparse.ArgumentTypeError: Encountered error while parsing value
+    :returns: The converted amount after checking
+    :rtype: int
+    """
     v = int(v)
     if v < 1.:
         raise argparse.ArgumentTypeError("Invalid number of tweets")
     return v
 
 
-def setupParser():
+def setupParser() -> None:
+    """
+    Sets up command line argument parser with required options.
+    """
     parser.add_argument(
         "-y", "--year",
         metavar="year",
         help="Year to analyze",
-        type=yearType
+        type=_yearType
     )
     parser.add_argument(
         "-m", "--month",
         metavar="month",
         help="Month to analyze",
-        type=monthType
+        type=_monthType
     )
     parser.add_argument(
         "-n", "--number",
         metavar="number",
         help="Number of tweets to extract",
-        type=amountType
+        type=_amountType
     )
     parser.add_argument(
         "-t", "--terms",
@@ -66,7 +110,22 @@ def setupParser():
     )
 
 
-def extract(year: int, month: int, number: int, terms: [str]):
+def extract(year: int, month: int, number: int, terms: [str]) -> None:
+    """
+    Downloads twitter data with the given arguments to file `tweets.csv`.
+
+    :param year: Year from the requested analysis time span
+    :type year: int
+
+    :param month: Month from the requested analysis time span
+    :type month: int
+
+    :param number: Max number of tweets to extract from time span
+    :type number: int
+
+    :param terms: Search terms for the query
+    :type terms: [str]
+    """
     rr = RequestRunner()
     rr.buildQuery(terms=terms)
     df = pd.DataFrame(
