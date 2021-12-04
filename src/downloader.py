@@ -24,6 +24,25 @@ parser = argparse.ArgumentParser(
 )
 
 
+def _dayType(v: str) -> int:
+    """
+    Checks `day` command line argument validity on startup and converts
+    value.
+
+    :param v: Value read from the command line
+    :type v: str
+    :raises argparse.ArgumentTypeError: Encountered error while parsing value
+    :returns: The converted day after checking
+    :rtype: int
+    """
+    v = int(v)
+    if v < 1 or v > 31:
+        raise argparse.ArgumentTypeError(
+            "Day should be within range [1, 31]"
+        )
+    return v
+
+
 def _monthType(v: str) -> int:
     """
     Checks `month` command line argument validity on startup and converts
@@ -102,6 +121,20 @@ def setupParser() -> None:
         type=_amountType
     )
     parser.add_argument(
+        "-db", "--dayBegin",
+        metavar="dayBegin",
+        help="Starting day for the time slot",
+        type=_dayType,
+        default=1
+    )
+    parser.add_argument(
+        "-de", "--dayEnd",
+        metavar="dayEnd",
+        help="Ending day for the time slot",
+        type=_dayType,
+        default=-1
+    )
+    parser.add_argument(
         "-t", "--terms",
         metavar="terms",
         help="Define search term list from text file (terms separated by " +
@@ -110,7 +143,14 @@ def setupParser() -> None:
     )
 
 
-def extract(year: int, month: int, number: int, terms: [str]) -> None:
+def extract(
+        year: int,
+        month: int,
+        startDay: int,
+        endDay: int,
+        number: int,
+        terms: [str]
+) -> None:
     """
     Downloads twitter data with the given arguments to file `tweets.csv`.
 
@@ -129,7 +169,13 @@ def extract(year: int, month: int, number: int, terms: [str]) -> None:
     rr = RequestRunner()
     rr.buildQuery(terms=terms)
     df = pd.DataFrame(
-        data=rr.runArchiveQuery(year=year, month=month, maxResults=number)
+        data=rr.runArchiveQuery(
+            year=year,
+            month=month,
+            dayStart=startDay,
+            dayEnd=endDay,
+            maxResults=number
+        )
     )
     print(df.head())
     df.to_csv("tweets.csv")
@@ -151,6 +197,8 @@ def main():
     extract(
         year=args.year,
         month=args.month,
+        startDay=args.dayBegin,
+        endDay=args.dayEnd,
         number=args.number,
         terms=searchTerms
     )

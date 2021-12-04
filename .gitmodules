@@ -1,0 +1,3 @@
+[submodule "src/LeIA"]
+	path = src/LeIA
+	url = https://github.com/Ocramoi/LeIA

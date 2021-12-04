@@ -15,6 +15,8 @@ import typing
 import os
 import tweepy
 import calendar
+import sys
+import time
 
 from dotenv import load_dotenv
 load_dotenv()
@@ -70,10 +72,10 @@ class RequestRunner():
             os.getenv("ACCESS_TOKEN"),
             os.getenv("ACCESS_TOKEN_SECRET")
         )
-        self.api = tweepy.API(self.auth)
+        self.api = tweepy.API(self.auth, wait_on_rate_limit=True)
 
         # API parameters
-        self.MAX_PER_MONTH = 25*(10**3)
+        self.MAX_PER_MONTH = 5*(10**3)
         self.MAX_QUERY_LEN = 128
         self.MAX_PER_MIN = 30
         self.TIMEOUT = 60/self.MAX_PER_MIN
@@ -112,6 +114,8 @@ class RequestRunner():
             _archiveQuery: str,
             _year: int,
             _month: int,
+            _dayStart: int,
+            _dayEnd: int,
             _maxResults: int,
     ) -> tweepy.models.ResultSet:
         """
@@ -120,11 +124,19 @@ class RequestRunner():
         :param _archiveQuery: Initialized and formated search query
         :type _archiveQuery: str
 
-        :param _year: Year for the analysed time span
+        :param _year: Year for the analyzed time span
         :type _year: int
 
-        :param _month: Month for the analysed time span
+        :param _month: Month for the analyzed time span
         :type _month: int
+
+        :param _dayStart: Start day for the analyzed time span
+        (defaults to 1)
+        :type _dayStart: int
+
+        :param _dayEnd: End day for the analyzed time span
+        (defaults to last day of the month)
+        :type _dayEnd: int
 
         :param _maxResults: Maximum number of returned tweets
         [resolves to min(size of found_tweets, _maxResults)]
@@ -138,30 +150,42 @@ class RequestRunner():
                 "maxResults out of range [10, {}]".format(self.MAX_PER_MONTH)
             )
 
-        lastDay = calendar.monthrange(_year, _month)[1]
         args = {
             "label": self.ARCHIVE_TAG,
             "query": _archiveQuery,
-            "fromDate": "{:04}{:02}{:02}0000".format(_year, _month, 1),
-            "toDate": "{:04}{:02}{:02}2359".format(_year, _month, lastDay)
+            "fromDate": "{:04}{:02}{:02}0000".format(_year, _month, _dayStart),
+            "toDate": "{:04}{:02}{:02}2359".format(_year, _month, _dayEnd)
         }
 
-        return tweepy.Cursor(self.api.search_full_archive, **args).items(_maxResults)
+        return tweepy.Cursor(
+            self.api.search_full_archive,
+            **args
+        ).items(_maxResults)
 
     def runArchiveQuery(
             self,
             year: int,
             month: int,
-            maxResults=-1,
+            dayStart: int = 1,
+            dayEnd: int = -1,
+            maxResults: int = -1,
     ) -> [dict]:
         """
         Archive query facility.
 
-        :param year: Year for the analysed time span
+        :param year: Year for the analyzed time span
         :type year: int
 
-        :param month: Month for the analysed time span
+        :param month: Month for the analyzed time span
         :type month: int
+
+        :param dayStart: Start day for the analyzed time span
+        (defaults to 1)
+        :type dayStart: int
+
+        :param dayEnd: End day for the analyzed time span
+        (defaults to last day of the month)
+        :type dayEnd: int
 
         :param maxResults: Maximum number of returned tweets
         (defaults to maximum monthly quota on < 0)
@@ -174,20 +198,36 @@ class RequestRunner():
         if self._definedQuery == "":
             raise QueryError("Query not defined. Run `buildQuery` to set it")
 
-        if maxResults < 1:
-            maxResults = 100
+        if dayEnd < 1:
+            dayEnd = calendar.monthrange(year, month)[1]
+        if dayEnd < dayStart:
+            raise QueryError("Invalid dates! Start date should come before end date")
 
-        tweets = []
+        if maxResults < 1:
+            maxResults = self.MAX_PER_MONTH
+        if dayStart < 1:
+            dayStart = 1
+
+        print("✓ Running query...")
         r = self._runArchiveQuery(
             _archiveQuery=self._definedQuery,
             _year=year,
             _month=month,
+            _dayStart=dayStart,
+            _dayEnd=dayEnd,
             _maxResults=maxResults
         )
+
+        print("✓ Storing data...")
+        tweets = []
         for tweet in r:
-            if not tweet.retweeted:
-                tweets.append({
-                    "id": tweet.id_str,
-                    "text": tweet.text
-                })
+            try:
+                if not tweet.retweeted:
+                    tweets.append({
+                        "id": tweet.id_str,
+                        "text": tweet.text
+                    })
+            except Exception:
+                sys.stderr.write("Request rate met, retyring in 61 seconds...")
+                time.sleep(61)
         return tweets

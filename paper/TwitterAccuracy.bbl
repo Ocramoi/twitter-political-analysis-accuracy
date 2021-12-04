@@ -1,0 +1,673 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{Almeida2018}{web_page}{}
+      \name{author}{1}{}{%
+        {{hash=67fd6e91513a69e871aa0d69af8fda55}{%
+           family={Almeida},
+           familyi={A\bibinitperiod},
+           given={Rafael\bibnamedelimb J.\bibnamedelimi A.},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{67fd6e91513a69e871aa0d69af8fda55}
+      \strng{fullhash}{67fd6e91513a69e871aa0d69af8fda55}
+      \strng{bibnamehash}{67fd6e91513a69e871aa0d69af8fda55}
+      \strng{authorbibnamehash}{67fd6e91513a69e871aa0d69af8fda55}
+      \strng{authornamehash}{67fd6e91513a69e871aa0d69af8fda55}
+      \strng{authorfullhash}{67fd6e91513a69e871aa0d69af8fda55}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{GitHub repository}
+      \field{title}{LeIA - Léxico para Inferência Adaptada}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://github.com/rafjaa/LeIA
+      \endverb
+      \verb{url}
+      \verb https://github.com/rafjaa/LeIA
+      \endverb
+    \endentry
+    \entry{arquimedesMidia}{web_page}{}
+      \name{author}{1}{}{%
+        {{hash=6046c4fb7d5f5827a403a383f364555c}{%
+           family={Arquimedes},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{6046c4fb7d5f5827a403a383f364555c}
+      \strng{fullhash}{6046c4fb7d5f5827a403a383f364555c}
+      \strng{bibnamehash}{6046c4fb7d5f5827a403a383f364555c}
+      \strng{authorbibnamehash}{6046c4fb7d5f5827a403a383f364555c}
+      \strng{authornamehash}{6046c4fb7d5f5827a403a383f364555c}
+      \strng{authorfullhash}{6046c4fb7d5f5827a403a383f364555c}
+      \field{extraname}{1}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Arquimedes}
+      \field{month}{10}
+      \field{title}{Mídia - Arquimedes}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://arquimedes.social/news/
+      \endverb
+      \verb{url}
+      \verb https://arquimedes.social/news/
+      \endverb
+    \endentry
+    \entry{Arquimedes2021}{web_page}{}
+      \name{author}{1}{}{%
+        {{hash=6046c4fb7d5f5827a403a383f364555c}{%
+           family={Arquimedes},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{6046c4fb7d5f5827a403a383f364555c}
+      \strng{fullhash}{6046c4fb7d5f5827a403a383f364555c}
+      \strng{bibnamehash}{6046c4fb7d5f5827a403a383f364555c}
+      \strng{authorbibnamehash}{6046c4fb7d5f5827a403a383f364555c}
+      \strng{authornamehash}{6046c4fb7d5f5827a403a383f364555c}
+      \strng{authorfullhash}{6046c4fb7d5f5827a403a383f364555c}
+      \field{extraname}{2}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Arquimedes - Prevendo através dos dados}
+      \field{month}{10}
+      \field{title}{Sobre - Arquimedes}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://arquimedes.social/sobre/
+      \endverb
+      \verb{url}
+      \verb https://arquimedes.social/sobre/
+      \endverb
+    \endentry
+    \entry{Aziz2018}{report}{}
+      \name{author}{4}{}{%
+        {{hash=9c73eefe0d2623f5224ef93e2d51482e}{%
+           family={Aziz},
+           familyi={A\bibinitperiod},
+           given={Moh.\bibnamedelimi Nasru},
+           giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=b46ed9f79e640a8f953fb3deebf5ef9a}{%
+           family={Firmanto},
+           familyi={F\bibinitperiod},
+           given={Ari},
+           giveni={A\bibinitperiod}}}%
+        {{hash=13ff2cb7710a7b06af8807c89ce5018e}{%
+           family={Fajrin},
+           familyi={F\bibinitperiod},
+           given={A.\bibnamedelimi Miftah},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=bf284b1d3cd73e2a1496386b5990ea08}{%
+           family={Ginardi},
+           familyi={G\bibinitperiod},
+           given={R.\bibnamedelimi V.\bibnamedelimi Hari},
+           giveni={R\bibinitperiod\bibinitdelim V\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Department of Informatics, Institut Teknologi Spuluh Nopember}%
+      }
+      \strng{namehash}{16b9a5c50184483e4bbd02a7c97277a3}
+      \strng{fullhash}{e016b7a53362e647cd1afd61658787f4}
+      \strng{bibnamehash}{16b9a5c50184483e4bbd02a7c97277a3}
+      \strng{authorbibnamehash}{16b9a5c50184483e4bbd02a7c97277a3}
+      \strng{authornamehash}{16b9a5c50184483e4bbd02a7c97277a3}
+      \strng{authorfullhash}{e016b7a53362e647cd1afd61658787f4}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The era of information disclosure and social media tends to make people express their opinions on social media. Indonesia is one of the top five nations social media users in general, especially Twitter. This becomes an interesting thing when trying to see public opinion on a government service. Opinion mining can be used to get information from textual twitter to be processed into an information by classifying existing information into positive information classes and negative information classes. In this research, we try to do opinion mining on public opinion about Identification card (KTP) service in Surabaya city. We compare between supervised and unsupervised methods to see their performance for each classifier. In unsupervised the sentiwordnet approach is used to classify between negative and positive opinions. Supervised Support Vector Machine (SVM) method is used to create a classification model to define an opinion. Before the data is classified, preprocessing steps are used to make the data better. In addition, the Latent Dirichlet Allocation (LDA) approach is used to see for topics that tend to be strong which affects a negative or positive opinion. The result of the classification model by using SVM achieved accuracy rate of 75\%. keywords-text mining, sentiment analysis, opinion mining, big data analysis, lexicon based, machine learning, topic modeling, lda}
+      \field{title}{Sentiment Analysis and Topic Modelling for Identification of Government Service Satisfaction}
+      \field{year}{2018}
+      \verb{doi}
+      \verb 10.1109/ICITACEE.2018.8576974
+      \endverb
+      \verb{urlraw}
+      \verb https://api.twitter.com.
+      \endverb
+      \verb{url}
+      \verb https://api.twitter.com.
+      \endverb
+    \endentry
+    \entry{Budiharto2018}{article}{}
+      \name{author}{2}{}{%
+        {{hash=036eb0d36f3f511d638929f6006b5aad}{%
+           family={Budiharto},
+           familyi={B\bibinitperiod},
+           given={Widodo},
+           giveni={W\bibinitperiod}}}%
+        {{hash=744e4e6c14d9d2719e0ae16dae7cc51e}{%
+           family={Meiliana},
+           familyi={M\bibinitperiod},
+           given={Meiliana},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {SpringerOpen}%
+      }
+      \strng{namehash}{8cb871183e7790249b9bb106474bf054}
+      \strng{fullhash}{8cb871183e7790249b9bb106474bf054}
+      \strng{bibnamehash}{8cb871183e7790249b9bb106474bf054}
+      \strng{authorbibnamehash}{8cb871183e7790249b9bb106474bf054}
+      \strng{authornamehash}{8cb871183e7790249b9bb106474bf054}
+      \strng{authorfullhash}{8cb871183e7790249b9bb106474bf054}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Big data encompasses social networking websites including Twitter as popular micro-blogging social media platform for a political campaign. The explosive Twitter data as a respond of the political campaign can be used to predict the Presidential election as has been conducted to predict the political election in several countries such as US, UK, Spain, and French. The authors use tweets from President Candidates of Indonesia (Jokowi and Prabowo), and tweets from relevant hashtags for sentiment analysis gathered from March to July 2018 to predict Indonesian Presidential election result. The authors make an algorithm and method to count important data, top words and train the model and predict the polarity of the sentiment. The experimental result is produced by using R language and show that Jokowi leads the current election prediction. This prediction result is corresponding to four survey institutes in Indonesia that proved our method had produced reliable prediction results.}
+      \field{issn}{21961115}
+      \field{issue}{1}
+      \field{journaltitle}{Journal of Big Data}
+      \field{month}{12}
+      \field{title}{Prediction and analysis of Indonesia Presidential election from Twitter using sentiment analysis}
+      \field{volume}{5}
+      \field{year}{2018}
+      \verb{doi}
+      \verb 10.1186/s40537-018-0164-1
+      \endverb
+      \keyw{Prediction,Presidential election,Sentiment analysis,Twitter}
+    \endentry
+    \entry{Hutto2014}{report}{}
+      \name{author}{2}{}{%
+        {{hash=8be118feb9932174d0f436aee008b941}{%
+           family={Hutto},
+           familyi={H\bibinitperiod},
+           given={C\bibnamedelima J},
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=c3163690c9103d2541d6910886053ba6}{%
+           family={Gilbert},
+           familyi={G\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{a49dddf981fb77b5c5a05f68ee2c71dc}
+      \strng{fullhash}{a49dddf981fb77b5c5a05f68ee2c71dc}
+      \strng{bibnamehash}{a49dddf981fb77b5c5a05f68ee2c71dc}
+      \strng{authorbibnamehash}{a49dddf981fb77b5c5a05f68ee2c71dc}
+      \strng{authornamehash}{a49dddf981fb77b5c5a05f68ee2c71dc}
+      \strng{authorfullhash}{a49dddf981fb77b5c5a05f68ee2c71dc}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The inherent nature of social media content poses serious challenges to practical applications of sentiment analysis. We present VADER, a simple rule-based model for general sentiment analysis, and compare its effectiveness to eleven typical state-of-practice benchmarks including LIWC, ANEW, the General Inquirer, SentiWordNet, and machine learning oriented techniques relying on Naive Bayes, Maximum Entropy, and Support Vector Machine (SVM) algorithms. Using a combination of qualitative and quantitative methods, we first construct and empirically validate a gold-standard list of lexical features (along with their associated sentiment intensity measures) which are specifically attuned to sentiment in microblog-like contexts. We then combine these lexical features with consideration for five general rules that embody grammatical and syntactical conventions for expressing and emphasizing sentiment intensity. Interestingly , using our parsimonious rule-based model to assess the sentiment of tweets, we find that VADER outperforms individual human raters (F1 Classification Accuracy = 0.96 and 0.84, respectively), and generalizes more favorably across contexts than any of our benchmarks.}
+      \field{title}{VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text}
+      \field{year}{2014}
+      \verb{urlraw}
+      \verb http://sentic.net/
+      \endverb
+      \verb{url}
+      \verb http://sentic.net/
+      \endverb
+    \endentry
+    \entry{AvaliacaoGovernoIPEC}{report}{}
+      \name{author}{1}{}{%
+        {{hash=ca3e26d6dfbb53b32c425bb8beba705b}{%
+           family={IPEC},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{ca3e26d6dfbb53b32c425bb8beba705b}
+      \strng{fullhash}{ca3e26d6dfbb53b32c425bb8beba705b}
+      \strng{bibnamehash}{ca3e26d6dfbb53b32c425bb8beba705b}
+      \strng{authorbibnamehash}{ca3e26d6dfbb53b32c425bb8beba705b}
+      \strng{authornamehash}{ca3e26d6dfbb53b32c425bb8beba705b}
+      \strng{authorfullhash}{ca3e26d6dfbb53b32c425bb8beba705b}
+      \field{sortinit}{I}
+      \field{sortinithash}{9417e9a1288a9371e2691d999083ed39}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{PESQUISA DE OPINIÃO PÚBLICA SOBRE AVALIAÇÃO DO GOVERNO FEDERAL}
+      \verb{urlraw}
+      \verb https://www.ipec-inteligencia.com.br/Repository/Files/26/04_13_Ipec_JOB_21_0046-7_Avaliacao_do_Governo_Relatorio_de_tabelas.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.ipec-inteligencia.com.br/Repository/Files/26/04_13_Ipec_JOB_21_0046-7_Avaliacao_do_Governo_Relatorio_de_tabelas.pdf
+      \endverb
+    \endentry
+    \entry{Kassraie2017}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=2f089517207b7dc4f4f010edf629c99d}{%
+           family={Kassraie},
+           familyi={K\bibinitperiod},
+           given={Parnian},
+           giveni={P\bibinitperiod}}}%
+        {{hash=5931bed1e6a19a619f973b7e07b2da6f}{%
+           family={Modirshanechi},
+           familyi={M\bibinitperiod},
+           given={Alireza},
+           giveni={A\bibinitperiod}}}%
+        {{hash=df0e323c7c20625723369071b8c687d3}{%
+           family={Aghajan},
+           familyi={A\bibinitperiod},
+           given={Hamid\bibnamedelima K.},
+           giveni={H\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {SciTePress}%
+      }
+      \strng{namehash}{12c13dd5112c1b4ec4370ed559f7ac10}
+      \strng{fullhash}{12c13dd5112c1b4ec4370ed559f7ac10}
+      \strng{bibnamehash}{12c13dd5112c1b4ec4370ed559f7ac10}
+      \strng{authorbibnamehash}{12c13dd5112c1b4ec4370ed559f7ac10}
+      \strng{authornamehash}{12c13dd5112c1b4ec4370ed559f7ac10}
+      \strng{authorfullhash}{12c13dd5112c1b4ec4370ed559f7ac10}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{It is common to use online social content for analyzing political events. Twitter-based data by itself is not necessarily a representative sample of the society due to non-uniform participation. This fact should be noticed when predicting real-world events from social media trends. Moreover, each tweet may bare a positive or negative sentiment towards the subject, which needs to be taken into account. By gathering a large dataset of more than 370,000 tweets on 2016 US Elections and carefully validating the resulting key trends against Google Trends, a legitimate dataset is created. A Gaussian process regression model is used to predict the election outcome; we bring in the novel idea of estimating candidates' vote shares instead of directly anticipating the winner of the election, as practiced in other approaches. Applying this method to the US 2016 Elections resulted in predicting Clinton's majority in the popular vote at the beginning of the elections week with 1\% error. The high variance in Trump supporters' behavior reported elsewhere is reflected in the higher error rate of his vote share.}
+      \field{isbn}{9789897582554}
+      \field{journaltitle}{DATA 2017 - Proceedings of the 6th International Conference on Data Science, Technology and Applications}
+      \field{title}{Election vote share prediction using a sentiment-based fusion of Twitter data with Google trends and online polls}
+      \field{year}{2017}
+      \field{pages}{363\bibrangedash 370}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.5220/0006484303630370
+      \endverb
+      \keyw{Election prediction,Gaussian process regression,Google trends,Sentiment analysis,Social media text mining,Twitter}
+    \endentry
+    \entry{Kumar2015}{article}{}
+      \name{author}{3}{}{%
+        {{hash=9bd9a5a3467b3b802732e5e6adcea4fa}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={Akshi},
+           giveni={A\bibinitperiod}}}%
+        {{hash=5135559430f7237dcb0794d2116315c7}{%
+           family={Dogra},
+           familyi={D\bibinitperiod},
+           given={Prakhar},
+           giveni={P\bibinitperiod}}}%
+        {{hash=7088b464ff6fe1a2d82393a076b6bc75}{%
+           family={Dabas},
+           familyi={D\bibinitperiod},
+           given={Vikrant},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{6382168a4b7fc24671070bc081010548}
+      \strng{fullhash}{6382168a4b7fc24671070bc081010548}
+      \strng{bibnamehash}{6382168a4b7fc24671070bc081010548}
+      \strng{authorbibnamehash}{6382168a4b7fc24671070bc081010548}
+      \strng{authornamehash}{6382168a4b7fc24671070bc081010548}
+      \strng{authorfullhash}{6382168a4b7fc24671070bc081010548}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{With the rise in use of micro-blogging sites like Twitter, people are able to express and share their opinions with each other on a common platform. Currently all work in opinion mining research has quantified \& assessed the expression of opinion as positive, negative or neutral values, we intend to categorize the opinion on the basis of five emotions, namely Happiness, Anger, Fear, Sadness \& Disgust, which have been globally accepted \& defined in human psychology. This paper presents a method to assess these identified types of emotions in a tweet using opinion mining. A two-step approach is proposed, where firstly, to identify the sentiment; we extract the opinion words (a combination of the adjectives along with the verbs and adverbs) in the tweets and subsequently use a novel algorithm to find the emotion values of opinion words. The initial results show that it is a motivating technique, which may find potential applications in business intelligence, government policy making, amongst others.}
+      \field{isbn}{9781467379489}
+      \field{issue}{8}
+      \field{journaltitle}{International Conference on Contemporary Computing}
+      \field{title}{Emotion Analysis of Twitter using Opinion Mining}
+      \field{year}{2015}
+    \endentry
+    \entry{opinionTwitter}{article}{}
+      \name{author}{5}{}{%
+        {{hash=00df3557bb6366e35bb4b20d6dfd1b11}{%
+           family={Meduru},
+           familyi={M\bibinitperiod},
+           given={Manogna},
+           giveni={M\bibinitperiod}}}%
+        {{hash=55c84d034a06f925e2f959b4b04b9917}{%
+           family={Mahimkar},
+           familyi={M\bibinitperiod},
+           given={Antara},
+           giveni={A\bibinitperiod}}}%
+        {{hash=f841d2297be32d04509f01f1ae996ec2}{%
+           family={Subramanian},
+           familyi={S\bibinitperiod},
+           given={Krishna},
+           giveni={K\bibinitperiod}}}%
+        {{hash=922dd05ea7067451a12a47d5d86cef3d}{%
+           family={Padiya},
+           familyi={P\bibinitperiod},
+           given={Puja\bibnamedelima Y},
+           giveni={P\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=dcb2fb1fb1b7e50e40e36825974e4764}{%
+           family={Gunjgur},
+           familyi={G\bibinitperiod},
+           given={Prathmesh\bibnamedelima N},
+           giveni={P\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \strng{namehash}{caa676e566d94205bf3c5ac37e079384}
+      \strng{fullhash}{ed6e7805c3ab1c1ae3fd5c5869bc63a7}
+      \strng{bibnamehash}{caa676e566d94205bf3c5ac37e079384}
+      \strng{authorbibnamehash}{caa676e566d94205bf3c5ac37e079384}
+      \strng{authornamehash}{caa676e566d94205bf3c5ac37e079384}
+      \strng{authorfullhash}{ed6e7805c3ab1c1ae3fd5c5869bc63a7}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Sentiment analysis deals with identifying and understanding opinions and sentiments expressed in a particular text. The masses give their opinion regarding various subjects on social media platforms using tweets, status updates and blogs. By analyzing this very data, we can gain better insight of the public opinion on any subject in specific. On performing sentiment analysis in a specific domain, it is possible to identify the effect of domain information in sentiment classification. Twitter sentiment analysis is difficult compared to general sentiment analysis due to the presence of slang words and misspellings. The maximum limit of characters allowed in Twitter is 140. In this paper, we try to analyze the twitter posts about government issues and political reforms. The proposed framework uses Twitter as the platform to analyze the emotions of the users using Sentiment Analysis. The system will use the opinions of the users, analyze the reaction and then map it to the appropriate region.}
+      \field{issn}{2307-4523}
+      \field{journaltitle}{International Journal of Computer}
+      \field{title}{Opinion Mining Using Twitter Feeds for Political Analysis}
+      \verb{urlraw}
+      \verb http://ijcjournal.org/
+      \endverb
+      \verb{url}
+      \verb http://ijcjournal.org/
+      \endverb
+      \keyw{Natural language Toolkit(NLTK),Opinion mining/Sentiment Analysis,Political Analysis}
+    \endentry
+    \entry{Oliveira2017}{article}{}
+      \name{author}{2}{}{%
+        {{hash=41ff05cbac3d7732c8eeadb1396cd310}{%
+           family={Oliveira},
+           familyi={O\bibinitperiod},
+           given={Daniel\bibnamedelimb José\bibnamedelima Silva},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=2b97ca72a777261f61941ddaabb80e77}{%
+           family={Souza\bibnamedelima Bermejo},
+           familyi={S\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={Paulo\bibnamedelima Henrique},
+           giveni={P\bibinitperiod\bibinitdelim H\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {FapUNIFESP (SciELO)}%
+      }
+      \strng{namehash}{08b92bd2bda8f2e0948609a77d84804c}
+      \strng{fullhash}{08b92bd2bda8f2e0948609a77d84804c}
+      \strng{bibnamehash}{08b92bd2bda8f2e0948609a77d84804c}
+      \strng{authorbibnamehash}{08b92bd2bda8f2e0948609a77d84804c}
+      \strng{authornamehash}{08b92bd2bda8f2e0948609a77d84804c}
+      \strng{authorfullhash}{08b92bd2bda8f2e0948609a77d84804c}
+      \field{sortinit}{O}
+      \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Resumo Este estudo procurou identificar como a análise de sentimento, baseada em textos extraídos de mídias sociais, pode ser um instrumento de mensuração da opinião pública sobre a atuação do governo, de forma a contribuir para a avaliação da administração pública. Trata-se de um estudo aplicado, interdisciplinar, exploratório, qualitativo e quantitativo. Foram revisadas as principais formulações teóricas e conceituais acerca do tema e realizadas demonstrações práticas, utilizando-se uma ferramenta de mineração de opinião que proporcionou precisão satisfatória no processamento de dados. Para fins de demonstração, foram selecionados temas que motivaram a realização da onda de protestos que envolveu milhões de pessoas no Brasil em junho de 2013. Foram coletadas, processadas e analisadas, aproximadamente, 130 mil mensagens postadas no Facebook e no Twitter sobre esses temas em dois períodos distintos. Por meio dessa investigação, observou-se que a análise de sentimento pode revelar a opinião polarizada dos cidadãos quanto à atuação do governo.Abstract This study sought to identify as sentiment analysis, based on texts taken social media can be a measuring instrument of public opinion on the government’s performance in order to contribute to the evaluation of public administration. This is an applied study, interdisciplinary, exploratory, qualitative and quantitative. The main theoretical and conceptual formulations on the subject were reviewed and conducted practical demonstrations using an opinion mining tool which provided satisfactory precision in data processing. For demonstration purposes, themes were selected that motivated the wave of protests involving millions of people in Brazil in June 2013. They were collected, processed and analyzed approximately 130,000 messages posted on Facebook and Twitter on these topics in two distinct periods. Through this analysis, it was observed that the sentiment analysis can reveal the polarized opinions of citizens about the government’s performance.}
+      \field{issn}{1984-9230}
+      \field{issue}{82}
+      \field{journaltitle}{Organizações \& Sociedade}
+      \field{month}{9}
+      \field{title}{Mídias sociais e administração pública: análise do sentimento social perante a atuação do Governo Federal brasileiro}
+      \field{volume}{24}
+      \field{year}{2017}
+      \field{pages}{491\bibrangedash 508}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1590/1984-9240827
+      \endverb
+    \endentry
+    \entry{Oliveira2019}{article}{}
+      \name{author}{4}{}{%
+        {{hash=41ff05cbac3d7732c8eeadb1396cd310}{%
+           family={Oliveira},
+           familyi={O\bibinitperiod},
+           given={Daniel\bibnamedelimb José\bibnamedelima Silva},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=8eccd2ce2ed5a7f55c84c5fabfac5f28}{%
+           family={Bermejo},
+           familyi={B\bibinitperiod},
+           given={Paulo\bibnamedelimb Henrique\bibnamedelimb De\bibnamedelima Souza},
+           giveni={P\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=8133b6aac7fcbf1eedd5dd46014a3a50}{%
+           family={Pereira},
+           familyi={P\bibinitperiod},
+           given={José\bibnamedelima Roberto},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=6eb71ff3ab21cdee20a6cb4c8eb93680}{%
+           family={Barbosa},
+           familyi={B\bibinitperiod},
+           given={Daniely\bibnamedelima Aparecida},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Fundacao Getulio Vargas}%
+      }
+      \strng{namehash}{14f64adc726e36c6a5492b91c8911718}
+      \strng{fullhash}{dc05705177aea1fb4f146c014be8ec35}
+      \strng{bibnamehash}{14f64adc726e36c6a5492b91c8911718}
+      \strng{authorbibnamehash}{14f64adc726e36c6a5492b91c8911718}
+      \strng{authornamehash}{14f64adc726e36c6a5492b91c8911718}
+      \strng{authorfullhash}{dc05705177aea1fb4f146c014be8ec35}
+      \field{sortinit}{O}
+      \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Sentiment analysis is a knowledge discovery technique developed from data mining; its purpose is to reveal people’s opinions on specific topics. This is an appropriate technique to apply to unstructured data sources, such as social media, that cover information on a variety of topics (such as politics and public administration). In this context, the objective of this study was to identify whether sentiment analysis can reflect public opinion and, thus, contribute to practices of social management. Therefore, the sentiment analysis technique was applied to reveal citizens’ opinions, which were expressed on Twitter and concerned some of the main social programs in force during Brazil’s Rousseff government. The study consisted of a comparison between the results of the sentiment analysis and the concepts and applications involving four strategies of social media used by governments from the point of view of social management. The results revealed that the sentiment analysis technique could contribute to social management practices in the context of the network strategy.}
+      \field{issn}{19823134}
+      \field{issue}{1}
+      \field{journaltitle}{Revista de Administracao Publica}
+      \field{month}{1}
+      \field{title}{The application of the sentiment analysis technique in social media as a tool for social management practices at the governmental level}
+      \field{volume}{53}
+      \field{year}{2019}
+      \field{pages}{235\bibrangedash 251}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1590/0034-7612174204
+      \endverb
+      \keyw{Opinion mining,Public administration,Sentiment analysis,Social management,Social media}
+    \endentry
+    \entry{IpecSetembro}{report}{}
+      \list{institution}{1}{%
+        {IPEC}%
+      }
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{labeltitlesource}{title}
+      \field{month}{9}
+      \field{title}{PESQUISA DE OPINIÃO PÚBLICA SOBRE ASSUNTOS POLÍTICOS/ADMINISTRATIVOS}
+      \field{year}{2021}
+    \endentry
+    \entry{IpecPesquisas}{web_page}{}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Inteligência em Pesquisa e Consultoria Estratégica}
+      \field{title}{Pesquisas - IPEC}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://www.ipec-inteligencia.com.br/pesquisas/
+      \endverb
+      \verb{url}
+      \verb https://www.ipec-inteligencia.com.br/pesquisas/
+      \endverb
+    \endentry
+    \entry{Tumasjan2010}{report}{}
+      \name{author}{4}{}{%
+        {{hash=478771634ee86d4ef56bb7d93e21aa00}{%
+           family={Tumasjan},
+           familyi={T\bibinitperiod},
+           given={Andranik},
+           giveni={A\bibinitperiod}}}%
+        {{hash=5b0e7539a7826c2a9ad91e82e9565a53}{%
+           family={Sprenger},
+           familyi={S\bibinitperiod},
+           given={Timm\bibnamedelima O},
+           giveni={T\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+        {{hash=d85e1d8b4c718e79ed38e2a9475b2dd4}{%
+           family={Sandner},
+           familyi={S\bibinitperiod},
+           given={Philipp\bibnamedelima G},
+           giveni={P\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=39520a845d8881062421934a51d77c4d}{%
+           family={Welpe},
+           familyi={W\bibinitperiod},
+           given={Isabell\bibnamedelima M},
+           giveni={I\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{3d75a230c57b75413684805db4c5a2d6}
+      \strng{fullhash}{abdb0913991593a3b465a635010032e6}
+      \strng{bibnamehash}{3d75a230c57b75413684805db4c5a2d6}
+      \strng{authorbibnamehash}{3d75a230c57b75413684805db4c5a2d6}
+      \strng{authornamehash}{3d75a230c57b75413684805db4c5a2d6}
+      \strng{authorfullhash}{abdb0913991593a3b465a635010032e6}
+      \field{sortinit}{T}
+      \field{sortinithash}{51f9faf24c60c62ca764a77f78cf5666}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Twitter is a microblogging website where users read and write millions of short messages on a variety of topics every day. This study uses the context of the German federal election to investigate whether Twitter is used as a forum for political deliberation and whether online messages on Twitter validly mirror offline political sentiment. Using LIWC text analysis software, we conducted a content analysis of over 100,000 messages containing a reference to either a political party or a politician. Our results show that Twitter is indeed used extensively for political deliberation. We find that the mere number of messages mentioning a party reflects the election result. Moreover, joint mentions of two parties are in line with real world political ties and coalitions. An analysis of the tweets' political sentiment demonstrates close correspondence to the parties' and politicians' political positions indicating that the content of Twitter messages plausibly reflects the offline political landscape. We discuss the use of microblogging message content as a valid indicator of political sentiment and derive suggestions for further research.}
+      \field{title}{Predicting Elections with Twitter: What 140 Characters Reveal about Political Sentiment}
+      \field{year}{2010}
+      \verb{urlraw}
+      \verb www.aaai.org
+      \endverb
+      \verb{url}
+      \verb www.aaai.org
+      \endverb
+      \keyw{Twitter,data mining,elections,microblogging,politics,sentiment analysis}
+    \endentry
+    \entry{Wang2017}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=1f647bb6da8304b7be380ec58eb6373a}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Lei},
+           giveni={L\bibinitperiod}}}%
+        {{hash=9165cfc898b65206b59ba97128e372e9}{%
+           family={Gan},
+           familyi={G\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{707ef963bd902a14464591c85d357845}
+      \strng{fullhash}{707ef963bd902a14464591c85d357845}
+      \strng{bibnamehash}{707ef963bd902a14464591c85d357845}
+      \strng{authorbibnamehash}{707ef963bd902a14464591c85d357845}
+      \strng{authornamehash}{707ef963bd902a14464591c85d357845}
+      \strng{authorfullhash}{707ef963bd902a14464591c85d357845}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{"IEEE Catalogue Number: CFP1785L-ART."}
+      \field{isbn}{9781538630075}
+      \field{journaltitle}{2017 9th Computer Science and Electronic Engineering (CEEC)}
+      \field{title}{Prediction of the 2017 French Election Based on Twitter Data Analysis}
+      \field{year}{2017}
+    \endentry
+    \entry{Weiand2017}{article}{}
+      \name{author}{3}{}{%
+        {{hash=903d65d73186f0c6eb61050326b228cc}{%
+           family={Weiand},
+           familyi={W\bibinitperiod},
+           given={Augusto},
+           giveni={A\bibinitperiod}}}%
+        {{hash=02eb0e63f9688b0393fea052d4874fb0}{%
+           family={Rodrigues},
+           familyi={R\bibinitperiod},
+           given={Fernanda},
+           giveni={F\bibinitperiod}}}%
+        {{hash=47af70fad8419f90f6e932e38fa3d18f}{%
+           family={Weiand},
+           familyi={W\bibinitperiod},
+           given={Ribeiro},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{5f946d7757aa45800570d4b83cf2967a}
+      \strng{fullhash}{5f946d7757aa45800570d4b83cf2967a}
+      \strng{bibnamehash}{5f946d7757aa45800570d4b83cf2967a}
+      \strng{authorbibnamehash}{5f946d7757aa45800570d4b83cf2967a}
+      \strng{authornamehash}{5f946d7757aa45800570d4b83cf2967a}
+      \strng{authorfullhash}{5f946d7757aa45800570d4b83cf2967a}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Este artigo propõe um algoritmo de análise de sentimentos dos tweets do microblog Twitter, utilizando o modelo probabilístico de Naïve Bayes, de modo a classificá-los em positivos ou negativos. Foram utilizados os dados pré-analisados de Sanders (2011) para a construção do corpus e posterior aplicação da análise e validação cruzada. Após, demonstramos o desenvolvimento do algoritmo seguindo a metodologia estudada nos artigos relacionados, utilizando, também, as bibliotecas NLTK e Scikit-Learn para o auxílio na aplicação do algoritmo com a linguagem de programação python, medidas de acurácia e validação cruzada dos dados. Neste momento da pesquisa, foi possível obter um índice acurácia relativamente alto, de 91\% no dataset mencionado. Organizamos este artigo em sessões que abordam os trabalhos relacionados, a metodologia utilizada, o sistema de coleta de dados, a biblioteca NLTK, o modelo probabilístico Naïve Bayes e, por fim, os resultados e os trabalhos futuros, nesta ordem. Abstract: This article proposes an algorithm for the analysis of feelings of Twitter microblog tweets using the probabilistic model of NaIve Bayes, in order to classify them as positive or negative. We used the pre-analyzed data (Sanders, 2011) for the construction of the corpus and subsequent application of the analysis and cross-validation. After that, we demonstrate the development of the algorithm following the methodology studied in the related articles, using also the NLTK and Scikit-Learn libraries for the aid of the application of the algorithm with the programming language python, measures of accuracy and cross-validation of the data. At this time of the research, it was possible to obtain a relatively high index of accuracy, of 91\% in the mentioned dataset. We organize this article in sessions that deal with the related work, the methodology used, the data collection system, the NLTK library, the NaIve Bayes probabilistic model and, finally, the results and future work, in that order.}
+      \field{journaltitle}{ScientiaTec: Revista de Educação, Ciência e Tecnologia do IFRS}
+      \field{title}{Análise de sentimentos do Twitter com Naïve Bayes e NLTK Augusto We}
+      \field{volume}{4}
+      \field{year}{2017}
+      \keyw{Feelings,Naïve Bayes,Twitter}
+    \endentry
+    \entry{Yousaf2021}{article}{}
+      \name{author}{7}{}{%
+        {{hash=4d2e623c61ff32583de2eda288f97a3b}{%
+           family={Yousaf},
+           familyi={Y\bibinitperiod},
+           given={Anam},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3a8cd40c4ce97f492ab674f9dfc13003}{%
+           family={Umer},
+           familyi={U\bibinitperiod},
+           given={Muhammad},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a7973dc6da45c7610e9a5d4490de9516}{%
+           family={Sadiq},
+           familyi={S\bibinitperiod},
+           given={Saima},
+           giveni={S\bibinitperiod}}}%
+        {{hash=042d629a6c1149a9c2287911aeac2264}{%
+           family={Ullah},
+           familyi={U\bibinitperiod},
+           given={Saleem},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c424204a9da2927d4d0c77bc4716d175}{%
+           family={Mirjalili},
+           familyi={M\bibinitperiod},
+           given={Seyedali},
+           giveni={S\bibinitperiod}}}%
+        {{hash=6cd7398ab670fe8edce8d7ba54b36a28}{%
+           family={Rupapara},
+           familyi={R\bibinitperiod},
+           given={Vaibhav},
+           giveni={V\bibinitperiod}}}%
+        {{hash=10fad8d2c02c05a84f5753abe81fc4df}{%
+           family={Nappi},
+           familyi={N\bibinitperiod},
+           given={Michele},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers Inc.}%
+      }
+      \strng{namehash}{0846fb2e32f6b0bdd142053f791d66fb}
+      \strng{fullhash}{e7df43c5d8ec5bb25276c7ee5bf679b6}
+      \strng{bibnamehash}{0846fb2e32f6b0bdd142053f791d66fb}
+      \strng{authorbibnamehash}{0846fb2e32f6b0bdd142053f791d66fb}
+      \strng{authornamehash}{0846fb2e32f6b0bdd142053f791d66fb}
+      \strng{authorfullhash}{e7df43c5d8ec5bb25276c7ee5bf679b6}
+      \field{sortinit}{Y}
+      \field{sortinithash}{6ae2ff5458ff901249c2745238c951b7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The proliferation of user-generated content on social media has made opinion mining an arduous job. As a microblogging platform, Twitter is being used to collect views about products, trends, and politics. Sentiment analysis is a technique used to analyze the attitude, emotions and opinions of different people towards anything, and it can be carried out on tweets to analyze public opinion on news, policies, social movements, and personalities. By employing Machine Learning models, opinion mining can be performed without reading tweets manually. Their results could assist governments and businesses in rolling out policies, products, and events. Seven Machine Learning models are implemented for emotion recognition by classifying tweets as happy or unhappy. With an in-depth comparative performance analysis, it was observed that proposed voting classifier(LR-SGD) with TF-IDF produces the most optimal result with 79\% accuracy and 81\% F1 score. To further validate stability of the proposed approach on two more datasets, one binary and other multi-class dataset and achieved robust results.}
+      \field{issn}{21693536}
+      \field{journaltitle}{IEEE Access}
+      \field{title}{Emotion Recognition by Textual Tweets Classification Using Voting Classifier (LR-SGD)}
+      \field{volume}{9}
+      \field{year}{2021}
+      \field{pages}{6286\bibrangedash 6295}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/ACCESS.2020.3047831
+      \endverb
+      \keyw{Sentiment analysis,artificial intelligence,emotion recognition,machine learning,opinion mining,text classification}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
