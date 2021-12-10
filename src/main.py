@@ -64,6 +64,7 @@ def main():
         })
     df = pd.DataFrame.from_dict(tweets)
     df = df[~df.duplicated(keep=False, subset="parsed_text")]
+    df = df.loc[:, ~df.columns.str.contains('^Unnamed')]
     # TODO analisar termos como sujeito da frase
     if args.save:
         df.to_csv("analysis.csv")

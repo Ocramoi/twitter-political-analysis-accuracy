@@ -152,6 +152,44 @@
       \verb https://api.twitter.com.
       \endverb
     \endentry
+    \entry{Brum2017}{report}{}
+      \name{author}{2}{}{%
+        {{hash=3570e96a64ca0815a5e529c829d33b1d}{%
+           family={Brum},
+           familyi={B\bibinitperiod},
+           given={Henrico\bibnamedelima Bertini},
+           giveni={H\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=bd85c27bb6185ed7fd8bad40c04f3395}{%
+           family={Nunes},
+           familyi={N\bibinitperiod},
+           given={Maria\bibnamedelimb Das\bibnamedelimb Graças\bibnamedelima Volpe},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \list{institution}{2}{%
+        {Institute of Mathematical}%
+        {Computer Sciences, University of São Paulo}%
+      }
+      \strng{namehash}{a39926922bd4ea0d15d4f1354562d3d2}
+      \strng{fullhash}{a39926922bd4ea0d15d4f1354562d3d2}
+      \strng{bibnamehash}{a39926922bd4ea0d15d4f1354562d3d2}
+      \strng{authorbibnamehash}{a39926922bd4ea0d15d4f1354562d3d2}
+      \strng{authornamehash}{a39926922bd4ea0d15d4f1354562d3d2}
+      \strng{authorfullhash}{a39926922bd4ea0d15d4f1354562d3d2}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The large amount of data available in social media, forums and websites motivates researches in several areas of Natural Language Processing, such as sentiment analysis. The popularity of the area due to its subjective and semantic characteristics motivates research on novel methods and approaches for classification. Hence, there is a high demand for datasets on different domains and different languages. This paper introduces TweetSentBR, a sentiment corpus for Brazilian Portuguese manually annotated with 15.000 sentences on TV show domain. The sentences were labeled in three classes (positive, neutral and negative) by seven annotators, following literature guidelines for ensuring reliability on the annotation. We also ran baseline experiments on polarity classification using six machine learning classifiers, reaching 80.38\% on F-Measure in binary classification and 64.87\% when including the neutral class. We also performed experiments in similar datasets for polarity classification task in comparison to this corpus.}
+      \field{title}{Building a Sentiment Corpus of Tweets in Brazilian Portuguese}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://bitbucket.org/HBrum/tweetsentbr
+      \endverb
+      \verb{url}
+      \verb https://bitbucket.org/HBrum/tweetsentbr
+      \endverb
+      \keyw{Corpus Annotation,Sentiment Analysis,Social Media}
+    \endentry
     \entry{Budiharto2018}{article}{}
       \name{author}{2}{}{%
         {{hash=036eb0d36f3f511d638929f6006b5aad}{%

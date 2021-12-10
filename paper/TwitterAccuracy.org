@@ -1,4 +1,4 @@
-#+TITLE: /Twitter users: What Do They Know? Do They Know Things? Let's Find Out!/ @@latex:\\ {\LARGE Analyzing the accuracy of predictions of public approval of the government using sentiment analysis of Twitter data }@@
+#+TITLE: /Twitter Users: What Do They Know? Do They Know Things? Let's Find Out!/ @@latex:\\ {\LARGE Analyzing the accuracy of predictions of public approval of the government using sentiment analysis of Twitter data }@@
 #+LANGUAGE: en
 #+KEYWORDS: social media, natural language processing, government opinion, mining
 #+LATEX_CLASS: IEEEtran
@@ -11,12 +11,23 @@
 #+LATEX_HEADER: \IEEEpeerreviewmaketitle{}
 
 #+BEGIN_abstract
-...
+Social media has become more and more the unofficial "town's square" of our society, allowing for the sharing of opinions and discussions in this marketplace of attention. With that in mind, this paper aims to show how mining these discussions may allow for statistical inferences of its population through processes much easier than previously held standards of in person surveying, specifically in the context of political opinions, although any statistical data collected must be taken with a grain of salt due to how sensitive the accuracy of these results are to initial assumptions and data modeling.
 #+END_abstract
 
 #+BEGIN_IEEEkeywords
 data mining, social media, political analysis, prediction accuracy
 #+END_IEEEkeywords
+
+* Introduction
+The current paradigm for web content generation, the so called Web 2.0, was defined in 2005 by Tim O'Reilly as \footnote{http://radar.oreilly.com/2005/10/web-20-compact-definition.html}
+#+BEGIN_QUOTE
+/[...] the network as platform, spanning all connected devices; Web 2.0 applications [...] [get] better the more people use it, consuming and remixing data from multiple sources, including individual users, while providing their own data and services in a form that allows remixing by others, creating network effects through an “architecture of participation,” and going beyond the page metaphor of Web 1.0 to deliver rich user experiences./
+#+END_QUOTE
+This idea of federated content creation allows the ideas expressed in these online spaces to more closely resemble the actual opinions of its constituents, encouraging users to express their personal opinions and relate to ideas expressed by peers.
+
+The decentralized nature of this content and its ample access also allows for easy mining of huge sets of data, so considering the online content as a truthful analog for real world ideas, mining of online data asymptotically matches the real world data for the population that the users are a sample of.
+
+With that in mind, the goal of this paper is to analyze the accuracy of online mined sentiment data, specifically in the context of government approval, compared to traditional polling, testing the hypothesis that this easily implemented method is a good real world approximation for traditionally obtained data.
 
 * Related work
 With the widespread usage of social media, like the microblogging platform /Twitter/, by the general population, its usage as a barometer for public opinion has been discussed more and more in recent years, even more so in politics, a field where accurate predictions of public opinion are essential. This resulted in ample research being done in the area, from initial work like Tumasjan et al. \cite{Tumasjan2010} in 2010 using Linguistic Inquiry and Word Count to analyze favorability rates of parties and politicians and, therefore, predict election results, to more recent and complex models like Nasrul et al. \cite{Aziz2018} in 2018 using Support Vector Machines to identify public satisfaction with government services, resulting in fairly accurate predictive models.
@@ -27,45 +38,35 @@ In the field of brazilian politics, studies have showed the accuracy of sentimen
 
 This approach has also been used by private companies like /Arquimedes/ \cite{Arquimedes2021}, with results comparable to traditional surveys conducted by companies like /Vox Populi/, /IBOPE/ and /Datafolha/, resulting in those analyses now being regularly used by many reputable sources (as seen in \cite{arquimedesMidia}).
 
+All code used for this paper, as well as this document itself, will be available in [[https://github.com/Ocramoi/twitter-political-analysis-accuracy][the accompanying /Github/ repository.]]
+
 ** Hypothesis
 Taking into account previous research done in the field, our main hypothesis is that opinion data mined straight from a given social media platform (/Twitter/ in our case) is within margin of error of traditional polling, allowing its results to be taken as statically equivalent to the much more costly and time consuming traditional, in person, polling techniques.
 
-# This hypothesis is supported and has its importance reinforced by the increasing presence of social media data mining, as the ones done by /Arquimedes/ \cite{arquimedesMidia}, in the media and the previous work in other contexts that show the reliability of such methods, as the one done in Indonesia in 2018 \cite{Budiharto2018} or even in the context of the German elections in 2010 \cite{Tumasjan2010}, showing that results either confirming or contradicting the trust in this information would be important for the credibility of such reporting.
 This hypothesis is supported by previous work in other contexts that show the reliability of such methods in politics, as those done in Indonesia in 2018 \cite{Budiharto2018}, in the context of the french elections in 2017 \cite{Wang2017} and many others \cite{Tumasjan2010}\cite{Kassraie2017}, showing results that closely correspond to traditionally collected data. Also, other studies have already theorized on the positive impact on the popular participation in politics that could be brought to the brazilian political landscape by such data mining \cite{Oliveira2019} \cite{Oliveira2017}.
 
-** Research questions
-*** Exploratory questions
-- Are there any research done already on the accuracy of political predictions based on /Twitter/ data mining?
-    # Yes, there's already a considerable body of work on this kind of comparative analysis \cite{Budiharto2018} \cite{Tumasjan2010} \cite{Wang2017} \cite{Kassraie2017}, only not on the specific context of brazilian politics, which should be solved by this project.
-- What is the current state-of-the-art method for this kind of analysis?
-    # Based on the latest research, the best method of sentiment analysis is done using Support Vector Machines on the vectorization of the tweet's text, followed by simpler Naive Bayes models \cite{Aziz2018} \cite{Jain2015} \cite{Ramteke2016} \cite{Sharma2016}.
-*** Descriptive questions
-- Is data mining cheaper/more efficient than traditional polling?
-    # Taking electoral polls done professionally in 2018 in Brasil, the costs of running a national poll can run anywhere from R\textdollar 18.95 to R\textdollar 115.50 per person (based on https://www.moneytimes.com.br/quanto-custam-as-pesquisas-eleitorais-veja-as-mais-caras/).
-- Does Twitter's user base reflect popular opinion?
-    # Based on research done by the platform itself (https://veja.abril.com.br/tecnologia/75-dos-usuarios-brasileiros-tem-no-twitter-uma-fonte-sobre-politica/), only 15\% of brazilian users do not use /Twitter/ as a source of political news.
-*** Causality questions
-- Can data assertions of the accuracy of predictions on the current government be generalized temporally?
-
-# Kassraie2017 - RNTN: 80% accuracy
 * Methodology
 The main objective of this study is to compare the accuracy of data mining methods to the traditional polling methods on the public's opinion of the current brazilian administration, so we try to abstract the qualitative data mining classification into a quantitative identification of the public's opinion in a 3-way classification akin to the one done by IPEC in its opinion polling on the approval of the current government (as seen on its monthly press report \cite{IpecSetembro}).
 
 Here we outline the methodological procedure for each step of this study: the data collection, extracting the relevant information from /Twitter/ for analysis; data preprocessing, discarding ambiguous, duplicate or otherwise irrelevant texts; sentiment analysis, extracting the sentiment data of each extracted /tweet/; statistical analysis, comparing the results with ones obtained by traditional polling.
 ** Data collection
-/Twitter/ itself provides its own API with support for keyword based searches, so the information was collected running searches over relevant keywords for our context: /'Bolsonaro', 'governo', 'presidente'/, etc. within the analyzed periods for each comparison, extracting all matches in the space of a given month in 2021.
+/Twitter/ itself provides its own API with support for keyword based searches over any time spam with the /Full-Archive search/ \footnote{https://developer.twitter.com/en/docs/twitter-api/premium/search-api/quick-start/premium-full-archive},  so the information was collected running searches over relevant keywords for our context: /'Bolsonaro', 'governo', 'presidente'/, /'país'/ and /'mito'/ within the analyzed period for the analysis. The time spent in this step is directly related to the usage of the Twitter API and its search quota for the given access level, being the bulk of the processing time.
 ** Data preprocessing
 For a more representative data set, focusing on reducing inconsistencies, redundancies and misleading information in the data, we had to, before starting the sentiment analysis, clear the data set removing:
 - /Tweets/ containing URLs, which may indicate an ambiguous text (differentiating if the sentiment expressed refers to the contents of the URL or the subject would require further investigating), detected with regular expressions
 - Repeated, non retweeted text, which may indicate content by spam bots, detected by keeping a set of unique tweets
 - User handles, anonymizing the data for publishing, replaced using regular expressions
-# - /tweets/ in other languages, detected using TextBlob \footnote{https://github.com/sloria/TextBlob}
 ** Sentiment analysis
 Once we had the striped text for each /tweet/ and its related keyword from whose search the data was extracted, we could analyze the sentiment of each instance and tally them to the overall sentiment of each keyword. Due to the limitations in the scope of this paper, the sentiment mining was done using LeIA \cite{Almeida2018} a brazilian-portuguese /fork/ of the lexicon-based sentiment analysis tool VADER \cite{Hutto2014}. The original tool has great accuracy for this kind of analysis considering its 0.96 F1 score on 3-class accuracy for a corpus of /tweets/ while also maintaining good performance due to its lexical nature.
 ** Statistical analysis
 We propose then taking the harmonic mean of these values as an abstraction of the overall opinion on the current brazilian administration, which can be compared to IPEC's public opinion poll on administrative/political subjects (/PESQUISA DE OPINIÃO PÚBLICA SOBRE ASSUNTOS POLÍTICOS/ADMINISTRATIVOS/) \cite{IpecPesquisas} in the respective time period, ideally being within its margin of error of 2 percentage points.
 
-* Results and discussion
+#+ATTR_LATEX: :placement [H] :width \linewidth
+#+CAPTION: Data analysis flowchart.
+#+NAME: fig:dataflow
+[[./Metodologia.png]]
+
+* Results
 The latest compiled public opinion poll on the brazilian government done by IPEC dated June 2021 (from 06-17-2021 to 06-21-2021) \cite{AvaliacaoGovernoIPEC} was used as reference for the analysis, with the /Twitter/ data being collected from the same span of time. The underlying reference question for the classification was /Do you personally approve or disapprove of the way/ President Jair Bolsonaro /is governing Brazil?/, with the following data (0.95 confidence with a margin of error of 0.02):
 
 |            | Approves | Disapproves | Other* | Total |
@@ -116,6 +117,13 @@ $$ V(\hat{p}_{other}) = \frac{300}{1524} - 0.04 \approx 0.157 $$
 $$ V(\hat{p}_{ratio}) = \frac{388}{1524 - 300} - \frac{601}{2002 - 80} \approx 0.004 $$
 
 This shows a strong bias in favor of neutral responses, with the total number of /tweets/ in each category being a weak indicator for the overall population taking the polling as a standard, with values well over the margin of error. However, the estimated ratio of positive responses over the total number of "opinionated" ones does describe the sample fairly well, reinforcing the idea that the naive data mining over the /tweets/ with only keywords tends to over represent neutral responses.
+
+* Discussion and future work
+The generated estimates show that when well modeled, estimates over social media mined data may give us true-to-life results, allowing for an easier, cheaper and faster way of assessing sentiment data over a online-represented population, like the Brazilian demographic in our example. However, it also shows how sensitive the accuracy of this predictions is to the definition of initial assumptions and statistical models.
+
+In the field of political analysis, this kind of data is of utmost importance for everyday analysis involving public assessments, for example, political campaigns, policy satisfaction surveying, voting intention, etc. Considering the price of traditional in person polling, running anywhere from R\textdollar 18.95 to R\textdollar 115.50 per person \footnote{https://www.moneytimes.com.br/quanto-custam-as-pesquisas-eleitorais-veja-as-mais-caras/}, the near gratuity of a data mining method like the one presented in this paper (safe some men/hours of initial setup and statistical work) expands greatly the accessibility of such data, showing the importance and utility of more research in the area.
+
+Future work in this question could tackle some of the short comings of the methods used, from the small sample size, inflexibility of the lexicon matching (not accepting acronym expansion, misspellings, and other important features, for example) or lackluster statistical analysis. Other methods of sentiment analysis should surely be tested, from expanded lexicon based ones to models using supervised machine learning like a Support Vector Machine, or, as suggested by Yousaf, et. al \cite{Yousaf2021}, Stochastic Gradient Descent/Linear Regression, over pre classified /Twitter/ data, like the reliable /TweetSentBR/ \cite{Brum2017}. The manual classification of /tweets/ for the classifiers could yield even better results for more recent analyses, making sure to base estimations on up to date models, although this would grow considerably the scope and costs of such analysis.
 
 \printbibliography{}
 
