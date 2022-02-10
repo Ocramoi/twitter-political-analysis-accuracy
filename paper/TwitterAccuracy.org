@@ -128,3 +128,4 @@ Future work in this question could tackle some of the short comings of the metho
 \printbibliography{}
 
 # TODO: svm processing USING TweetSentBR, acronym expansion, data normalizing, correct spelling
+# TODO: CONFIDENCE LEVEL !!!

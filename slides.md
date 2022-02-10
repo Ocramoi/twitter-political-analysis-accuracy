@@ -2,8 +2,10 @@
 %author: Marco Toledo
 %date: 2021-12-21
 
--> O quão acuradas são predições da opinião pública sobre a política com base na extração de dados do Twitter? <-
+-> Usários do Twitter: O que eles sabem? Eles sabem das coisas? Vamos descobrir! <-
 =====
+
+-> ## O quão acuradas são predições da opinião pública sobre a política com base na extração de dados do Twitter? <-
 
 -> Marco Toledo, RA: 11796419 <-
 -> BCC020 <-
